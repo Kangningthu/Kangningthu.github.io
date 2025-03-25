@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)https://html5up.net/uploads/demos/editorial/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>AI-Powered Denoising</title>
+		<title>AI-powered Denoising</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="./main_files/main.css">
@@ -31,9 +31,7 @@
     }
 </style>
 	</head>
-	<body class="" data-new-gr-c-s-check-loaded="14.1166.0" data-gr-ext-installed="">
-
-
+	<body class="" data-new-gr-c-s-check-loaded="14.1166.0" data-gr-ext-installed="">											
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
@@ -42,31 +40,71 @@
 						<div class="inner">
 
 							<!-- Header -->
-								<header id="header">
-									<a href="https://html5up.net/uploads/demos/editorial/index.html" class="logo"><strong>Learn, Denoise and Discover</strong></a>
-									<ul class="icons">
-										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+
 
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>A Guide to Deep Denoising and its Application to Scientific Imaging</h1>
+											<h1>AI-powered Denoising for Scientific Discovery</h1>
 <!--											<h1>Learn, Denoise and Discover:</h1>-->
 <!--											<p> A Guide to Deep Denoising and its Application to Scientific Imaging</p>-->
+<style>
+  .gif-container {
+      display: flex;
+       flex-direction: column; 
+       justify-content: center;
+      align-items: center;
+      %padding: 20px; /* Optional spacing */
+      text-align: justify; /* Centers caption text */
+  }
+
+  .large-gif {
+      width: 60%; /* Adjust size */
+      height: auto;
+  }
+  .gif-caption {
+      font-size: 15px;
+      color: gray;
+      margin-top: 8px;
+      width: 100%; /* Ensures caption takes the full width of its container */
+      max-width: 60%; /* Matches the width of the image */
+  }
+</style>
+
+<div class="gif-container">
+    <img src="40frames.gif" alt="Larger GIF" class="large-gif">
+    <figcaption class="gif-caption">Deep denoising is able to reveal the atomic-level structure of a platinum nanoparticle from electron-microscopy data that is severely corrupted by imaging noise.</figcaption>
+</div>
+
 										</header>
+										<article>
 										<p style="margin-top:3%; text-align:justify;">
-											This repository contains the Jupyter notebooks accompanying the research project "Learn, Denoise and Discover: A Guide to Deep Denoising and its Application to Scientific Imaging."  It encompasses various Jupyter notebooks that serve as practical complements to the study.
-										</p>
+											This website provides resources on <b>deep denoising</b>, an approach to remove noise from imaging data via artificial intelligence.</p>
+										</article>
+										<article><p style="margin-top:3%; text-align:justify;">We have applied this technology to study catalytic nanoparticles that are critical for industrial processes. Observing the dynamic rearrangement of the atoms on such nanoparticles requires imaging at a millisecond time scale, which results in severe noise degradation (as in the left panel above). Deep denoising is able to remove this noise, revealing previously unobserved atomic-level at the nanoparticle surface, as reported in the following article: 
+
+</p></article>
+										<article>
 										<p style="margin-top:3%; text-align:justify;">
+ <b><a href="https://www.science.org/stoken/author-tokens/ST-2481/full">Visualizing nanoparticle surface dynamics and instabilities enabled by deep denoising</a> </b><em>Crozier PA, Leibovich M, Haluai P, Tan M, Thomas AM, Vincent J, Mohan S, Marcos Morales A, Kulkarni SA, Matteson DS, Wang Y, Fernandez-Granda C.</em>  <b>Science</b> 387.6737 (2025): 949-954
+</p></article>
+										<article>
+										<p style="margin-top:3%; text-align:justify;">The following tutorial provides <b>a self-contained description of deep denoising</b>, emphasizing aspects that are important in real-world scientific applications. </p></article>
+										<article>
+										<p style="margin-top:3%; text-align:justify;">
+<b><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/DeepDenoisingGuide.pdf">Learn, Denoise and Discover: A Guide to Deep Denoising with an Application to Electron Microscopy</a> </b><em>Mohan S, Liu K, Crozier PA, Fernandez-Granda C.</em> Accepted to <b>IEEE Signal Processing Magazine</b>
+</p></article>
+										<article>
+										<p style="margin-top:3%; text-align:justify;">We provide code to reproduce the computational experiments in the tutorial, which involve <a href="piecewise_constant.html">1D piecewise-constant signals</a>, <a href="natural_images.html">natural images</a>, <a href="em_simulated.html">simulated electron-microscopy data</a> and <a href="em_simulated.html">real electron-microscopy data</a>. The full code repository is <a href="https://github.com/Kangningthu/DeepDenoisingGuide">available on GitHub</a>. 
+</p></article>
+										<article>
+<p style="margin-top:3%; text-align:justify;">The development and dissemination of these materials were made possible by the support of the <b>National Science Foundation</b> through grants OAC-2104105 and OAC-2103936.
+</p></article>
+										
+<!--										<p style="margin-top:3%; text-align:justify;">
 											This tutorial provides a self-contained description of deep-learning methodology for denoising, emphasizing aspects that are important in applications to real-world scientific imaging. The tutorial describes convolutional neural networks from first principles, explaining how to train them in a supervised and unsupervised manner. It also explains how to analyze the denoising strategies learned by these models, and how to evaluate their performance. Illustrative examples are provided based on computational experiments with simple 1D piecewise-constant signals, natural images and simulated electron-microscopy data. Code to reproduce all experiments is available online. In addition, a detailed case study is used to demonstrate the potential and challenges of applying deep denoising in real-world scientific-imaging scenarios. In the case study, supervised, unsupervised and semi-supervised deep-learning models are leveraged to denoise transmission-electron-microscopy data acquired at a very low signal-to-noise-ratio with the goal of investigate the atomic structure of catalytic nanoparticles.
-										</p>
+										</p> -->
 
 <!--										<ul class="actions">-->
 <!--											<li><a href="https://html5up.net/uploads/demos/editorial/#" class="button big">Learn More</a></li>-->
@@ -120,38 +158,7 @@
 <!--								</section>-->
 
 							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Main content</h2>
-									</header>
-<!--									<div class="posts">-->
-									<div class="posts">
-										<article>
-											<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-											<div class="elfsight-app-d6bb5452-ca0b-466c-b14b-5c6df1797bf7" data-elfsight-app-lazy></div>
-											<a href="code.html" class="image"><img src="./main_files/natural_img_inference_2.png" alt=""></a>
-											<h3>Natural Images Denoising</h3>
-											<p>We provide the inference code and pretrained model weights to compare the natural image denoising result of different denoiser: Wienar/ Linear net/ Deep Neural Network trained in a supervised manner or unsupervised manner. .</p>
-											<!-- <ul class="actions">
-												<li><a href="https://html5up.net/uploads/demos/editorial/#" class="button">More</a></li>
-											</ul> -->
-										</article>
-										<article>
-											<a href="code.html" class="image"><img src="./main_files/Piecewise2.jpg" alt=""></a>
-											<h3>Piecewise Constant Denoising</h3>
-											<p>We provide the training and inference result of the piecewise constant </p>
-											<!-- <ul class="actions">
-												<li><a href="https://html5up.net/uploads/demos/editorial/#" class="button">More</a></li>
-											</ul> -->
-										</article>
-										<article>
-											<a href="code.html" class="image"><img src="./main_files/Microscopy1.jpg" alt=""></a>
-											<h3>Microscopy Denoising</h3>
-											<p>We provide the inference code and pretrained model weights to compare the microscopy image denoising result of different denoiser: Wienar/ Linear net/ Deep Neural Network trained in a supervised manner or unsupervised manner.</p>
-										</article>
-
-									</div>
-								</section>
+								
 
 						</div>
 					</div>
@@ -160,34 +167,18 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="https://html5up.net/uploads/demos/editorial/#">
-										<input type="text" name="query" id="query" placeholder="Search">
-									</form>
-								</section>
-
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html" style="font-size: 20px;">Homepage</a></li>
-										<li><a href="code.html" style="font-size: 20px;">Code</a></li>
-										<li><a href="model.html" style="font-size: 20px;">Model</a></li>
-<!--										<li>-->
-<!--											<span class="opener">Submenu</span>-->
-<!--											<ul>-->
-<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Lorem Dolor</a></li>-->
-<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Ipsum Adipiscing</a></li>-->
-<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Tempus Magna</a></li>-->
-<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Feugiat Veroeros</a></li>-->
-<!--											</ul>-->
-<!--										</li>-->
-										<li><a href="data.html" style="font-size: 20px;">Data</a></li>
-										<li><a href="video.html" style="font-size: 20px;">Video</a></li>
-										<li><a href="reference.html" style="font-size: 20px;">Reference</a></li>
+										<li><a href="main.html" style="font-size: 20px;">Homepage</a></li>
+										<!--<li><a href="videos.html" style="font-size: 20px;">Videos</a></li> -->
+										<li><a href="piecewise_constant.html" style="font-size: 20px;">Piecewise-constant signals</a></li>
+										<li><a href="natural_images.html" style="font-size: 20px;">Natural images</a></li>
+										<li><a href="em.html" style="font-size: 20px;">Electron microscopy</a></li>
+										
 <!--										<li>-->
 <!--											<span class="opener">Another Submenu</span>-->
 <!--											<ul>-->
@@ -228,25 +219,8 @@
 <!--								</section>-->
 
 							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>For inquiries, contributions, or further information, please contact us at the following email address. </p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="https://html5up.net/uploads/demos/editorial/#">sm7582 AT nyu.edu or kl3141 AT nyu.edu</a></li>
-<!--										<li class="icon solid fa-phone">(000) 000-0000</li>-->
-<!--										<li class="icon solid fa-home">1234 Somewhere Road #8254<br>-->
-<!--										Nashville, TN 00000-0000</li>-->
-									</ul>
-								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">© Sreyas Mohan & Kangning Liu.
-<!--										All rights reserved. Demo Images: <a href="https://unsplash.com/">Unsplash</a>. Design: <a href="https://html5up.net/">HTML5 UP</a>.-->
-									</p>
-								</footer>
 
 						</div>
 					<a href="https://html5up.net/uploads/demos/editorial/#sidebar" class="toggle">Toggle</a></div>
