@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://html5up.net/uploads/demos/editorial/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>AI-powered Denoising</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./main_files/main.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before and After Slider</title>
+<style>
+    .slider-container {
+        position: relative;
+        width: max-content; /* Adjust to image width or set to 100% if responsive design is required */
+    }
+    .before, .after {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .after {
+        width: 50%; /* Initial overlay width set to 50% */
+    }
+    .slider {
+        position: absolute;
+        bottom: 10px; /* Position the slider at the bottom of the images */
+        left: 0;
+        width: 100%;
+        z-index: 3;
+    }
+</style>
+	</head>
+	<body class="" data-new-gr-c-s-check-loaded="14.1166.0" data-gr-ext-installed="">
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+
+						<div class="inner">
+
+							<!-- Header -->
+
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Electron Microscopy</h1>
+<!--											<h1>Learn, Denoise and Discover:</h1>-->
+<!--											<p> A Guide to Deep Denoising and its Application to Scientific Imaging</p>-->
+										</header>
+										<p style="margin-top:3%; text-align:justify;">
+											This page contains code to reproduce the computational experiments in the tutorial <b><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/DeepDenoisingGuide.pdf">Learn, Denoise and Discover: A Guide to Deep Denoising with an Application to Electron Microscopy</a> </b>, involving networks trained to denoise electron-microscopy data.  The code is in the form of Jupyter notebooks that can be run in Google colab. These notebooks use pretrained models. The full code repository, <a href="https://github.com/Kangningthu/DeepDenoisingGuide">available on GitHub</a>, contains the <a href="https://github.com/Kangningthu/DeepDenoisingGuide/tree/master/pretrained_models/Microscopy">models</a>, as well as code to <a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/notebooks/Training_code_microscopy.ipynb">train</a> them. </p>										
+										<article>
+											<ul class="actions">
+												<li><a href="https://colab.research.google.com/drive/1JTqP0oVD1ooGQI40eNKR800u15vilO2h#scrollTo=9W8ppZCZj--v" class="button">Supervised vs unsupervised learning</a></li>
+											</ul>
+											<p>This notebook compares neural networks trained to denoise simulated electron-microscopy data via supervised and unsupervised learning. It also includes a comparison with linear shift-invariant denoising. </p>
+										</article>
+										<article>
+											<ul class="actions">
+												<li><a href="https://colab.research.google.com/drive/1eFr3F5IUqjfh_qAP63yYtwppRQdDpYFj#scrollTo=DEZQa4g8ptd_" class="button">Interpretability</a></li>
+											</ul>
+											<p>This notebook visualizes the strategy learned by a neural network to denoise real electron-microscopy data, by visualizing equivalent filters that are equal to the network gradient with respect to its input.</p>
+										</article>
+<p style="margin-top:3%; text-align:justify;">
+More code for denoising electron-microscopy data, as well as simulated data, can be found <a href="https://github.com/sreyas-mohan/electron-microscopy-denoising">here</a>. In addition, see the following links for the  <a href="https://zenodo.org/records/14630449">code</a> and <a href="https://zenodo.org/records/14618961">real data</a> used in the paper <b><a href="https://www.science.org/doi/10.1126/science.ads2688">Visualizing nanoparticle surface dynamics and instabilities enabled by deep denoising</a></b>. 
+										</p>
+<!--										<p style="margin-top:3%; text-align:justify;">
+											This tutorial provides a self-contained description of deep-learning methodology for denoising, emphasizing aspects that are important in applications to real-world scientific imaging. The tutorial describes convolutional neural networks from first principles, explaining how to train them in a supervised and unsupervised manner. It also explains how to analyze the denoising strategies learned by these models, and how to evaluate their performance. Illustrative examples are provided based on computational experiments with simple 1D piecewise-constant signals, natural images and simulated electron-microscopy data. Code to reproduce all experiments is available online. In addition, a detailed case study is used to demonstrate the potential and challenges of applying deep denoising in real-world scientific-imaging scenarios. In the case study, supervised, unsupervised and semi-supervised deep-learning models are leveraged to denoise transmission-electron-microscopy data acquired at a very low signal-to-noise-ratio with the goal of investigate the atomic structure of catalytic nanoparticles.
+										</p> -->
+
+<!--										<ul class="actions">-->
+<!--											<li><a href="https://html5up.net/uploads/demos/editorial/#" class="button big">Learn More</a></li>-->
+<!--										</ul>-->
+									</div>
+<!--									<span class="image object">-->
+<!--										<img src="./main_files/Supervised_vs_unsupervised_training.jpg" alt="" style="width: 100%; height: auto;">-->
+<!--									</span>-->
+								</section>
+
+									<div class="content">
+<!--									<span class="image object">-->
+<!--										<img src="./main_files/Supervised_vs_unsupervised_training.jpg" alt="" style="width: 100%; height: auto;">-->
+<!--									</span>-->
+										</div>
+<!--							&lt;!&ndash; Section &ndash;&gt;-->
+<!--								<section>-->
+<!--									<header class="major">-->
+<!--										<h2>Erat lacinia</h2>-->
+<!--									</header>-->
+<!--									<div class="features">-->
+<!--										<article>-->
+<!--											<span class="icon fa-gem"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Portitor ullamcorper</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-paper-plane"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Sapien veroeros</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-rocket"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Quam lorem ipsum</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<span class="icon solid fa-signal"></span>-->
+<!--											<div class="content">-->
+<!--												<h3>Sed magna finibus</h3>-->
+<!--												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--											</div>-->
+<!--										</article>-->
+<!--									</div>-->
+<!--								</section>-->
+
+							<!-- Section -->
+								
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="main.html" style="font-size: 20px;">Homepage</a></li>
+										<!--<li><a href="videos.html" style="font-size: 20px;">Videos</a></li> -->
+<li><a href="piecewise_constant.html" style="font-size: 20px;">Piecewise-constant signals</a></li>
+										<li><a href="natural_images.html" style="font-size: 20px;">Natural images</a></li>
+										<li><a href="em.html" style="font-size: 20px;">Electron microscopy</a></li>
+										
+<!--										<li>-->
+<!--											<span class="opener">Another Submenu</span>-->
+<!--											<ul>-->
+<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Lorem Dolor</a></li>-->
+<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Ipsum Adipiscing</a></li>-->
+<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Tempus Magna</a></li>-->
+<!--												<li><a href="https://html5up.net/uploads/demos/editorial/#">Feugiat Veroeros</a></li>-->
+<!--											</ul>-->
+<!--										</li>-->
+<!--										<li><a href="https://html5up.net/uploads/demos/editorial/#">Maximus Erat</a></li>-->
+<!--										<li><a href="https://html5up.net/uploads/demos/editorial/#">Sapien Mauris</a></li>-->
+<!--										<li><a href="https://html5up.net/uploads/demos/editorial/#">Amet Lacinia</a></li>-->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+<!--								<section>-->
+<!--									<header class="major">-->
+<!--										<h2>Ante interdum</h2>-->
+<!--									</header>-->
+<!--									<div class="mini-posts">-->
+<!--										<article>-->
+<!--											<a href="https://html5up.net/uploads/demos/editorial/#" class="image"><img src="./main_files/pic07.jpg" alt=""></a>-->
+<!--											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<a href="https://html5up.net/uploads/demos/editorial/#" class="image"><img src="./main_files/pic08.jpg" alt=""></a>-->
+<!--											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>-->
+<!--										</article>-->
+<!--										<article>-->
+<!--											<a href="https://html5up.net/uploads/demos/editorial/#" class="image"><img src="./main_files/pic09.jpg" alt=""></a>-->
+<!--											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>-->
+<!--										</article>-->
+<!--									</div>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="https://html5up.net/uploads/demos/editorial/#" class="button">More</a></li>-->
+<!--									</ul>-->
+<!--								</section>-->
+
+							<!-- Section -->
+
+							<!-- Footer -->
+
+						</div>
+					<a href="https://html5up.net/uploads/demos/editorial/#sidebar" class="toggle">Toggle</a></div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="./main_files/jquery.min.js"></script>
+			<script src="./main_files/browser.min.js"></script>
+			<script src="./main_files/breakpoints.min.js"></script>
+			<script src="./main_files/util.js"></script>
+			<script src="./main_files/main.js"></script>
+
+	
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+
+	  .image.object {
+		height: auto;  /* Ensure the container has enough height */
+		}
+		.image.object img {
+			height: 100% !important;  /* Force height to be automatic */
+			width: 50% !important;  /* Force width to 100% */
+		}
+
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
