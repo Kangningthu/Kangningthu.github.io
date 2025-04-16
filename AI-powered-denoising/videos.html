@@ -48,27 +48,15 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Natural images</h1>
+											<h1>Videos</h1>
 <!--											<h1>Learn, Denoise and Discover:</h1>-->
 <!--											<p> A Guide to Deep Denoising and its Application to Scientific Imaging</p>-->
 										</header>
 										<p style="margin-top:3%; text-align:justify;">
-											This page contains code to reproduce the computational experiments in the tutorial <b><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/DeepDenoisingGuide.pdf">Learn, Denoise and Discover: A Guide to Deep Denoising with an Application to Electron Microscopy</a> </b>, involving networks trained to denoise natural photographic images.  The code is in the form of Jupyter notebooks that can be run in Google colab. These notebooks use pretrained models. The full code repository, <a href="https://github.com/Kangningthu/DeepDenoisingGuide">available on GitHub</a>, contains the <a href="https://github.com/Kangningthu/DeepDenoisingGuide/tree/master/pretrained_models/Natural_images">models</a>, as well as code to <a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/notebooks/Training_code_natural_images.ipynb">train</a> them. . 
+											This page contains videos complementing the tutorial <b><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/DeepDenoisingGuide.pdf">Learn, Denoise and Discover: A Guide to Deep Denoising with an Application to Electron Microscopy</a> </b> and the article <b><a href="https://www.science.org/doi/10.1126/science.ads2688">Visualizing nanoparticle surface dynamics and instabilities enabled by deep denoising</a></b>. Click on the titles to download the slides. 	
 										</p>
 										
-										<article>
-											<ul class="actions">
-												<li><a href="https://colab.research.google.com/drive/1ODchwNGTnGFaUlhLyl4yXyVMyBErvmNU#scrollTo=sM1RoyJIo4e7" class="button">Supervised vs unsupervised learning</a></li>
-											</ul>
-											<p>This notebook compares neural networks trained via supervised and unsupervised learning. It also includes a comparison with linear shift-invariant denoising. </p>
-										</article>
-										<article>
-											<ul class="actions">
-												<li><a href="https://colab.research.google.com/drive/1OKaG7puMvJxX7y7xexOVFfuZJF12bjqq#scrollTo=ZW6TYGSR9Qfl" class="button">Interpretability</a></li>
-											</ul>
-											<p>This notebook visualizes the denoising strategy learned by a neural network for specific inputs, by visualizing equivalent filters that are equal to the network gradient with respect to its input. </p>
-										</article>
-
+										
 <!--										<p style="margin-top:3%; text-align:justify;">
 											This tutorial provides a self-contained description of deep-learning methodology for denoising, emphasizing aspects that are important in applications to real-world scientific imaging. The tutorial describes convolutional neural networks from first principles, explaining how to train them in a supervised and unsupervised manner. It also explains how to analyze the denoising strategies learned by these models, and how to evaluate their performance. Illustrative examples are provided based on computational experiments with simple 1D piecewise-constant signals, natural images and simulated electron-microscopy data. Code to reproduce all experiments is available online. In addition, a detailed case study is used to demonstrate the potential and challenges of applying deep denoising in real-world scientific-imaging scenarios. In the case study, supervised, unsupervised and semi-supervised deep-learning models are leveraged to denoise transmission-electron-microscopy data acquired at a very low signal-to-noise-ratio with the goal of investigate the atomic structure of catalytic nanoparticles.
 										</p> -->
@@ -81,6 +69,52 @@
 <!--										<img src="./main_files/Supervised_vs_unsupervised_training.jpg" alt="" style="width: 100%; height: auto;">-->
 <!--									</span>-->
 								</section>
+								
+								<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Container for both videos */
+        .video-container {
+            display: flex;  /* Aligns children side by side */
+            gap: 20px;      /* Adds space between the videos */
+            justify-content: center;  /* Centers the videos */
+            flex-wrap: wrap;
+        }
+
+        /* Style for each video block */
+        .video-item {
+            text-align: center;  /* Centers titles and videos */
+        }
+
+        /* Style for video titles */
+        .video-item h3 {
+            margin-bottom: 10px;  /* Adds space between the title and video */
+            font-weight: normal;  /* Keeps title in normal font weight */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-item">
+            <h3><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/slides/supervised_denoising.pdf">Supervised denoising</a></h3>
+            <iframe width="420" height="236.25" src="https://www.youtube.com/embed/hizNO9nV5jo?si=CoEk2CvdXVpc-QVz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-item">
+       	 <h3><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/slides/unsupervised_denoising.pdf">Unsupervised denoising</a></h3>
+             <iframe width="420" height="236.25" src="https://www.youtube.com/embed/AFsxAb5f3c4?si=flT_GfsQ3wnxWsgi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    
+            <div class="video-item">
+           <h3><a href="https://github.com/Kangningthu/DeepDenoisingGuide/blob/master/slides/deep_denoising_electron_microscopy.pdf">Electron microscopy</a></h3>
+            <iframe width="420" height="236.25" src="https://www.youtube.com/embed/BykIRd_pEhM?si=Dl8LoVKZRf-J3TTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+                
+    </div>
+    
+</body>
+
 
 									<div class="content">
 <!--									<span class="image object">-->
@@ -141,7 +175,7 @@
 									</header>
 									<ul>
 										<li><a href="index.html" style="font-size: 20px;">Homepage</a></li>
-										<li><a href="videos.html" style="font-size: 20px;">Videos</a></li>
+										<li><a href="videos.html" style="font-size: 20px;">Videos</a></li> 
 <li><a href="piecewise_constant.html" style="font-size: 20px;">Piecewise-constant signals</a></li>
 										<li><a href="natural_images.html" style="font-size: 20px;">Natural images</a></li>
 										<li><a href="em.html" style="font-size: 20px;">Electron microscopy</a></li>
